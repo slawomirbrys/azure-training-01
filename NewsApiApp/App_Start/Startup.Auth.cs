@@ -13,16 +13,16 @@ namespace NewsApiApp
     {
         public void ConfigureAuth(IAppBuilder app)
         {
-            //// STAGE5 - Odkomentowac
-            //app.UseWindowsAzureActiveDirectoryBearerAuthentication(
-            //    new WindowsAzureActiveDirectoryBearerAuthenticationOptions
-            //    {
-            //        Tenant = ConfigurationManager.AppSettings["ida:Tenant"],
-            //        TokenValidationParameters = new TokenValidationParameters
-            //        {
-            //            ValidAudience = ConfigurationManager.AppSettings["ida:Audience"]
-            //        }
-            //    });
+            // STAGE5 - Odkomentowac
+            app.UseWindowsAzureActiveDirectoryBearerAuthentication(
+                new WindowsAzureActiveDirectoryBearerAuthenticationOptions
+                {
+                    Tenant = ConfigurationManager.AppSettings["ida:Tenant"],
+                    TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidAudience = ConfigurationManager.AppSettings["ida:Audience"]
+                    }
+                });
         }
 
     }

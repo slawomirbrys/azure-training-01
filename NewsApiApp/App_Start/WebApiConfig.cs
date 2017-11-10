@@ -11,12 +11,12 @@ namespace NewsApiApp
         {
 
             //// STAGE3 - Odkomentowac oraz skonfigurowac klucze ddb* w https://portal.azure.com
-            //DocumentDbRepository<News>.Initialize(
-            //    ConfigurationManager.AppSettings["ddbEndpoint"],
-            //    ConfigurationManager.AppSettings["ddbAuthKey"],
-            //    ConfigurationManager.AppSettings["ddbDatabase"],
-            //    ConfigurationManager.AppSettings["ddbCollection"]
-            //    );
+            DocumentDbRepository<News>.Initialize(
+                ConfigurationManager.AppSettings["ddbEndpoint"],
+                ConfigurationManager.AppSettings["ddbAuthKey"],
+                ConfigurationManager.AppSettings["ddbDatabase"],
+                ConfigurationManager.AppSettings["ddbCollection"]
+                );
 
             // Web API routes
             config.MapHttpAttributeRoutes();

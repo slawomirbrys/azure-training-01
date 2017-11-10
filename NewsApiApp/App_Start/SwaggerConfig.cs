@@ -13,15 +13,17 @@ namespace NewsApiApp
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
 
-            //// STAGE2 - Odkomentowac
-            //GlobalConfiguration.Configuration
-            //    .EnableSwagger(c =>
-            //        {
-            //            c.SingleApiVersion("v1", "NewsApiApp");
-            //        })
-            //    .EnableSwaggerUi(c =>
-            //        {
-            //        });
+            // STAGE2 - Odkomentowac
+            GlobalConfiguration.Configuration
+                .EnableSwagger(c =>
+                    {
+                        c.SingleApiVersion("v1", "NewsApiApp");
+                        
+                    })
+                .EnableSwaggerUi(c =>
+                    {
+                        
+                    });
         }
     }
 }

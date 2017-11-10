@@ -85,6 +85,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\azure-training-01-api - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\azure-training-01-api - Web Deploy.pubxml" />
     <None Include="Properties\webjob-publish-settings.json" />
   </ItemGroup>
   <ItemGroup>

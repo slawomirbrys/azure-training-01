@@ -28,9 +28,9 @@
                     <li ng-class="{ active: isActive('/Home') }"><a href="#/Home">Home</a></li>
                     <li ng-class="{ active: isActive('/NewsList') }"><a href="#/NewsList">News List</a></li>
                     <!--STAGE5 - Zakomentowac-->
-                    <li ng-class="{ active: isActive('/AddNews') }"><a href="#/AddNews">Add News</a></li>
+                    <!--<li ng-class="{ active: isActive('/AddNews') }"><a href="#/AddNews">Add News</a></li>-->
                     <!--STAGE5 - Odkomentowac-->
-                    <!--<li ng-class="{ active: isActive('/AddNews') }"><a href="#/AddNews" ng-show="userInfo.isAuthenticated">Add News</a></li>--> 
+                    <li ng-class="{ active: isActive('/AddNews') }"><a href="#/AddNews" ng-show="userInfo.isAuthenticated">Add News</a></li> 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="btn btn-link" ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</a></li>
@@ -60,11 +60,11 @@
 
     <!--STAGE2 - Skonfigurowac endpoint dla api-->
     <script type="text/javascript">
-        var newsApiAppEndpoint = "https://newsapiapp.azurewebsites.net";
+        var newsApiAppEndpoint = "https://azure-training-01-api.azurewebsites.net";
     </script>
 
     <!--STAGE2 - Odkomentowac-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
 
     <script src="app/adal.min.js"></script>
@@ -74,6 +74,6 @@
     <script src="app/controllers/homeController.js"></script>
     <script src="app/controllers/newsListController.js"></script>
     <script src="app/controllers/addNewsController.js"></script>
-    <script src="app/services/newsService.js"></script>-->
+    <script src="app/services/newsService.js"></script>
 </body>
 </html>
