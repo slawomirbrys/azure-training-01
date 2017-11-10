@@ -1,0 +1,13 @@
+﻿<div ng-init="populate()">
+    <p class="error">{{error}}</p>
+    <p>{{loadingMessage}}</p>
+    <div class="panel">
+        <div ng-repeat="item in newsListAbc | orderBy:'-created'" >
+            <h1>{{item.title}}</h1>
+            <i>{{item.author}} ({{ item.created | date:'yyyy-MM-dd HH:mm' }})</i>
+            <p>
+                {{item.body}}
+            </p>
+        </div>
+    </div>
+</div>
